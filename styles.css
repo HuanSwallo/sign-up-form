@@ -1,0 +1,86 @@
+@import url(https://fonts.googleapis.com/css?family=Sofia);
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+}
+
+.sidebar {
+    width: 430px;
+    height: 100vh;
+    background-image: url(./images/sidebar-background.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 100px;
+    padding: 8px;
+    background: rgba(18,19,21,0.35); 
+}
+
+#logo-img {
+    width: 50px;
+    height: auto;
+    margin-right: 15px;
+    /* Neon Effect for image */
+    filter: drop-shadow(0 0 5px #0c8cd5)
+            drop-shadow(0 0 10px #0c8cd5)
+            drop-shadow(0 0 20px #0c8cd5)
+            drop-shadow(0 0 40px #0c8cd5);
+}
+
+#logo-title {
+    color: azure;
+    /* Neon Effect for text */
+    text-shadow:
+        0 0 5px #0c8cd5,
+        0 0 10px #0c8cd5,
+        0 0 20px #0c8cd5,
+        0 0 40px #0c8cd5,
+        0 0 80px #0c8cd5;
+    font-size: 50px;
+    font-family: "Sofia", Roboto, sans-serif;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #c2ab77;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    background-color: #c0b8b6;
+}
+
+.submit {
+    display: flex;
+    flex-direction: column;
+    background-color: #c2ab77;
+}
