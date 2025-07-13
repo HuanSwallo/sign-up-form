@@ -49,7 +49,7 @@ input:focus {
 
 .container {
     display: flex;
-    height: 110vh; /* everything is stretched within the screen */
+    height: 100vh;
 }
 
 .sidebar {
@@ -98,7 +98,7 @@ input:focus {
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 470px;
+    top: 430px;
 }
 
 .credit-text {
@@ -116,7 +116,7 @@ input:focus {
 }
 
 .message {
-    padding: 50px;
+    padding: 56px 50px;
     background-color: #c2ab77;
     font-size: 18px;
     font-weight: 700;
@@ -149,10 +149,11 @@ input:focus {
 }
 
 .submit {
+    flex: 1;
+    flex-direction: column;
     box-shadow: 2px 2px 7px 1px black;
     background-color: #c2ab77;
     padding: 20px 50px;
-    gap: 32px;
 }
 
 #submit-button {
@@ -166,5 +167,5 @@ input:focus {
 }
 
 .submit-text {
-    margin-top: 23px;
+    margin-top: 20px;
 }
