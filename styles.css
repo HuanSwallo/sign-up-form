@@ -3,23 +3,57 @@
     box-sizing: border-box;
 }
 
-body {
+body, html {
     margin: 0;
     padding: 0;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
+    min-height: 100%;
+}
+
+body {
     font-family: Roboto, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #094996;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(0.95);
+}
+
+label {
+    margin-top: 6px;
+    font-size: 14px;
+}
+
+input {
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+input:focus {
+  border: 1px solid #094996; 
+  box-shadow: 0 0 4px #094996;
+  outline: none; /* removes default focus outline */
 }
 
 .container {
     display: flex;
-    flex: 1;
+    height: 110vh; /* everything is stretched within the screen */
 }
 
 .sidebar {
     width: 430px;
-    height: 100vh;
     background-image: url(./images/sidebar-background.png);
     background-size: cover;
     background-position: center center;
@@ -59,6 +93,22 @@ body {
     font-family: "Sofia", Roboto, sans-serif;
 }
 
+.credit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 470px;
+}
+
+.credit-text {
+    color: azure;
+}
+
+.credit-link {
+    text-decoration: underline;
+}
+
 .content {
     display: flex;
     flex: 1;
@@ -66,21 +116,55 @@ body {
 }
 
 .message {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 50px;
     background-color: #c2ab77;
+    font-size: 18px;
+    font-weight: 700;
 }
+
 
 .login {
     display: flex;
     flex-direction: column;
-    background-color: #c0b8b6;
+    background-color: #cdc3b9;
+    box-shadow: 2px 2px 7px 1px black;
+}
+
+.login-header {
+    padding: 15px 50px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.form-group {
+    display: flex;
+    gap: 40px;
+    padding: 20px 50px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 }
 
 .submit {
-    display: flex;
-    flex-direction: column;
+    box-shadow: 2px 2px 7px 1px black;
     background-color: #c2ab77;
+    padding: 20px 50px;
+    gap: 32px;
+}
+
+#submit-button {
+    padding: 10px 40px;
+    border: none;
+    border-radius: 8px;
+    background-color: #094996;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    color: azure;
+    font-weight: 700;
+}
+
+.submit-text {
+    margin-top: 23px;
 }
